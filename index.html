@@ -1,0 +1,14 @@
+---
+layout: page
+title: Goblins Incorporated
+---
+
+<p>This is the home of Goblins Incorporated.</p>
+
+<h2><a href="/articles/">News</a></h2>
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li><tt>{{ post.date | date_to_string }}</tt> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
